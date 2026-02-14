@@ -9,7 +9,7 @@ import {
   Volume2,
   Plus
 } from 'lucide-react';
-import movieData from './data.json';
+// movieData will be fetched at runtime
 
 const MovieCard = ({ movie }) => (
   <a href={movie.link} target="_blank" rel="noopener noreferrer" className="movie-card-v2">
@@ -62,25 +62,35 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Robust data loading with fallback check
-    if (movieData && Array.isArray(movieData) && movieData.length > 0) {
-      setData(movieData);
-    } else {
-      console.warn("Movie data missing or empty, using emergency fallback.");
-      // Emergency internal fallback if data.json is broken
-      setData([
-        {
-          category: "أعمال مختارة لكم",
-          movies: [
-            { title: "Dune: Part Two", image: "https://image.tmdb.org/t/p/w500/8b697tS6lYvS9696G1nU0O1sMmo.jpg", rating: "9.0", year: "2024", link: "#" },
-            { title: "Oppenheimer", image: "https://image.tmdb.org/t/p/w500/8Gxv3m7YbtpD3u79A7G7R7XlC.jpg", rating: "9.0", year: "2023", link: "#" },
-            { title: "The Batman", image: "https://image.tmdb.org/t/p/w500/7469sxS6lYvS9696G1nU0O1sMmo.jpg", rating: "8.4", year: "2022", link: "#" }
-          ]
-        }
-      ]);
-    }
+    const loadData = async () => {
+      try {
+        // Fetch from public folder relative to the app base
+        const response = await fetch('./data.json');
+        const movieData = await response.json();
 
-    setLoading(false);
+        console.log("Fetched Movie Data:", movieData);
+        if (movieData && Array.isArray(movieData) && movieData.length > 0) {
+          setData(movieData);
+        } else {
+          throw new Error("Invalid data format");
+        }
+      } catch (err) {
+        console.warn("Fetch failed, using emergency fallback:", err);
+        setData([
+          {
+            category: "أعمال مختارة لكم",
+            movies: [
+              { title: "Dune: Part Two", image: "https://image.tmdb.org/t/p/w500/8b697tS6lYvS9696G1nU0O1sMmo.jpg", rating: "9.0", year: "2024", link: "#" },
+              { title: "Oppenheimer", image: "https://image.tmdb.org/t/p/w500/8Gxv3m7YbtpD3u79A7G7R7XlC.jpg", rating: "9.0", year: "2023", link: "#" },
+              { title: "The Batman", image: "https://image.tmdb.org/t/p/w500/7469sxS6lYvS9696G1nU0O1sMmo.jpg", rating: "8.4", year: "2022", link: "#" }
+            ]
+          }
+        ]);
+      }
+      setLoading(false);
+    };
+
+    loadData();
 
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);

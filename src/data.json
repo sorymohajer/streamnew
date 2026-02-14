@@ -1,22 +1,122 @@
 [
   {
-    "category": " اعمال نتفلكس",
-    "movies": []
+    "category": "أعمال نتفلكس الحصرية",
+    "movies": [
+      {
+        "title": "Squid Game: The Challenge",
+        "image": "https://image.tmdb.org/t/p/w500/v9vHpxX90Hw6G0q8X7G7R7XlC.jpg",
+        "rating": "8.5",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "The Crown",
+        "image": "https://image.tmdb.org/t/p/w500/7Jp9xX9H0Hw6G0q8X7G7R7XlC.jpg",
+        "rating": "8.7",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Stranger Things",
+        "image": "https://image.tmdb.org/t/p/w500/x2LSRm2tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.9",
+        "year": "2022",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "The Witcher",
+        "image": "https://image.tmdb.org/t/p/w500/7v6G97tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.1",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Money Heist",
+        "image": "https://image.tmdb.org/t/p/w500/reksS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.6",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Dark",
+        "image": "https://image.tmdb.org/t/p/w500/apnX9H0Hw6G0q8X7G7R7XlC.jpg",
+        "rating": "9.0",
+        "year": "2022",
+        "link": "https://popcorn-stream.li/ar"
+      }
+    ]
   },
   {
     "category": "الأكثر مشاهدة هذا الأسبوع",
-    "movies": []
-  },
-  {
-    "category": "الأعلى تقييمًا",
-    "movies": []
+    "movies": [
+      {
+        "title": "Oppenheimer",
+        "image": "https://image.tmdb.org/t/p/w500/8Gxv3m7YbtpD3u79A7G7R7XlC.jpg",
+        "rating": "9.1",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Barbie",
+        "image": "https://image.tmdb.org/t/p/w500/iuFNm9H0Hw6G0q8X7G7R7XlC.jpg",
+        "rating": "8.0",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Killers of the Flower Moon",
+        "image": "https://image.tmdb.org/t/p/w500/dB697tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.4",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Dune: Part Two",
+        "image": "https://image.tmdb.org/t/p/w500/8b697tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "9.0",
+        "year": "2024",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Deadpool 3",
+        "image": "https://image.tmdb.org/t/p/w500/9b697tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.8",
+        "year": "2024",
+        "link": "https://popcorn-stream.li/ar"
+      }
+    ]
   },
   {
     "category": "أفلام الأكشن",
-    "movies": []
-  },
-  {
-    "category": "كوميدي",
-    "movies": []
+    "movies": [
+      {
+        "title": "John Wick: Chapter 4",
+        "image": "https://image.tmdb.org/t/p/w500/8659sxS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.8",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Top Gun: Maverick",
+        "image": "https://image.tmdb.org/t/p/w500/62G97tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.9",
+        "year": "2022",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "Spider-Man: Across the Spider-Verse",
+        "image": "https://image.tmdb.org/t/p/w500/8vt6G97tS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "9.2",
+        "year": "2023",
+        "link": "https://popcorn-stream.li/ar"
+      },
+      {
+        "title": "The Batman",
+        "image": "https://image.tmdb.org/t/p/w500/7469sxS6lYvS9696G1nU0O1sMmo.jpg",
+        "rating": "8.4",
+        "year": "2022",
+        "link": "https://popcorn-stream.li/ar"
+      }
+    ]
   }
 ]

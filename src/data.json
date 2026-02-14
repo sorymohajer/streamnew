@@ -1,101 +1,22 @@
 [
   {
-    "category": "اعمال نتفلكس",
-    "movies": [
-      {
-        "title": "The Godfather",
-        "image": "https://image.tmdb.org/t/p/w500/3bhkrjOiERoSTq9A9Mxt9rpzY1C.jpg",
-        "rating": "9.2",
-        "year": "1972",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "Inception",
-        "image": "https://image.tmdb.org/t/p/w500/9gk7Fn9sVAsS9696G1nU0O1sMmo.jpg",
-        "rating": "8.8",
-        "year": "2010",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "The Dark Knight",
-        "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDp9QmSJJhUvISOvfIF.jpg",
-        "rating": "9.0",
-        "year": "2008",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "Pulp Fiction",
-        "image": "https://image.tmdb.org/t/p/w500/d5iIl9h9btztp9kdccS0KGlyAUo.jpg",
-        "rating": "8.9",
-        "year": "1994",
-        "link": "https://popcorn-stream.li/ar"
-      }
-    ]
+    "category": " اعمال نتفلكس",
+    "movies": []
   },
   {
     "category": "الأكثر مشاهدة هذا الأسبوع",
-    "movies": [
-      {
-        "title": "The Godfather",
-        "image": "https://image.tmdb.org/t/p/w500/3bhkrjOiERoSTq9A9Mxt9rpzY1C.jpg",
-        "rating": "9.2",
-        "year": "1972",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "Inception",
-        "image": "https://image.tmdb.org/t/p/w500/9gk7Fn9sVAsS9696G1nU0O1sMmo.jpg",
-        "rating": "8.8",
-        "year": "2010",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "The Dark Knight",
-        "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDp9QmSJJhUvISOvfIF.jpg",
-        "rating": "9.0",
-        "year": "2008",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "Pulp Fiction",
-        "image": "https://image.tmdb.org/t/p/w500/d5iIl9h9btztp9kdccS0KGlyAUo.jpg",
-        "rating": "8.9",
-        "year": "1994",
-        "link": "https://popcorn-stream.li/ar"
-      }
-    ]
+    "movies": []
   },
   {
     "category": "الأعلى تقييمًا",
-    "movies": [
-      {
-        "title": "The Godfather",
-        "image": "https://image.tmdb.org/t/p/w500/3bhkrjOiERoSTq9A9Mxt9rpzY1C.jpg",
-        "rating": "9.2",
-        "year": "1972",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "Inception",
-        "image": "https://image.tmdb.org/t/p/w500/9gk7Fn9sVAsS9696G1nU0O1sMmo.jpg",
-        "rating": "8.8",
-        "year": "2010",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "The Dark Knight",
-        "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDp9QmSJJhUvISOvfIF.jpg",
-        "rating": "9.0",
-        "year": "2008",
-        "link": "https://popcorn-stream.li/ar"
-      },
-      {
-        "title": "Pulp Fiction",
-        "image": "https://image.tmdb.org/t/p/w500/d5iIl9h9btztp9kdccS0KGlyAUo.jpg",
-        "rating": "8.9",
-        "year": "1994",
-        "link": "https://popcorn-stream.li/ar"
-      }
-    ]
+    "movies": []
+  },
+  {
+    "category": "أفلام الأكشن",
+    "movies": []
+  },
+  {
+    "category": "كوميدي",
+    "movies": []
   }
 ]

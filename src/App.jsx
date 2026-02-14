@@ -57,37 +57,42 @@ const MovieRow = ({ title, movies }) => {
 };
 
 function App() {
-  const [data, setData] = useState([]);
+  // Initialize with fallback data to ensure content ALWAYS shows
+  const [data, setData] = useState([
+    {
+      category: "أعمال مختارة لكم",
+      movies: [
+        { title: "Dune: Part Two", image: "https://image.tmdb.org/t/p/w500/8b697tS6lYvS9696G1nU0O1sMmo.jpg", rating: "9.0", year: "2024", link: "https://popcorn-stream.li/ar" },
+        { title: "Oppenheimer", image: "https://image.tmdb.org/t/p/w500/8Gxv3m7YbtpD3u79A7G7R7XlC.jpg", rating: "9.0", year: "2023", link: "https://popcorn-stream.li/ar" },
+        { title: "The Batman", image: "https://image.tmdb.org/t/p/w500/7469sxS6lYvS9696G1nU0O1sMmo.jpg", rating: "8.4", year: "2022", link: "https://popcorn-stream.li/ar" },
+        { title: "John Wick 4", image: "https://image.tmdb.org/t/p/w500/8659sxS6lYvS9696G1nU0O1sMmo.jpg", rating: "8.8", year: "2023", link: "https://popcorn-stream.li/ar" },
+        { title: "Spider-Man: Across the Spider-Verse", image: "https://image.tmdb.org/t/p/w500/8vt6G97tS6lYvS9696G1nU0O1sMmo.jpg", rating: "9.2", year: "2023", link: "https://popcorn-stream.li/ar" }
+      ]
+    }
+  ]);
   const [scrolled, setScrolled] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); // No loading screen, show content immediately
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        // Fetch from public folder relative to the app base
-        const response = await fetch('./data.json');
+        // Correct path construction using Vite's BASE_URL
+        const basePath = import.meta.env.BASE_URL;
+        const jsonPath = `${basePath}data.json`.replace('//', '/'); // Avoid double slashes
+        console.log("Fetching from:", jsonPath);
+
+        const response = await fetch(jsonPath);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
         const movieData = await response.json();
 
         console.log("Fetched Movie Data:", movieData);
         if (movieData && Array.isArray(movieData) && movieData.length > 0) {
           setData(movieData);
-        } else {
-          throw new Error("Invalid data format");
         }
       } catch (err) {
-        console.warn("Fetch failed, using emergency fallback:", err);
-        setData([
-          {
-            category: "أعمال مختارة لكم",
-            movies: [
-              { title: "Dune: Part Two", image: "https://image.tmdb.org/t/p/w500/8b697tS6lYvS9696G1nU0O1sMmo.jpg", rating: "9.0", year: "2024", link: "#" },
-              { title: "Oppenheimer", image: "https://image.tmdb.org/t/p/w500/8Gxv3m7YbtpD3u79A7G7R7XlC.jpg", rating: "9.0", year: "2023", link: "#" },
-              { title: "The Batman", image: "https://image.tmdb.org/t/p/w500/7469sxS6lYvS9696G1nU0O1sMmo.jpg", rating: "8.4", year: "2022", link: "#" }
-            ]
-          }
-        ]);
+        console.error("Fetch failed, keeping fallback data:", err);
       }
-      setLoading(false);
     };
 
     loadData();
